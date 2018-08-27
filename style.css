@@ -1,0 +1,512 @@
+@font-face {
+    font-family: WeblySleekUILight;
+    src: url(https://github.com/natashta/test_from_fb/blob/master/fonts/weblysleekuil.eot); /* Для IE5-8 */
+    src: local(weblysleekuil), url(https://github.com/natashta/test_from_fb/blob/master/fonts/weblysleekuil.ttf); /* Для остальных браузеров */
+   }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	font-family: WeblySleekUILight, sans-serif;
+	font-size: 62.5%;
+	color: white;
+	background-color: white;
+	min-width: 320px;
+}
+
+.hidden {
+	display: none;
+}
+
+.head_line {
+	background: black;
+	color: white;
+	font-size: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.head {
+	width: 48%;
+	display: inline-block;
+	text-align: center;
+}
+.head form, .head p, .head button {
+	display: inline-block;
+}
+
+.head form {
+	background-color: white;
+}
+
+.head input {
+	padding:2px 5px;
+	border: none;
+	background-color: white;
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%BB%D1%83%D0%BF%D0%B0.jpg?raw=true) no-repeat right;
+}
+
+.phone {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+    margin-right: -15px;
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%82%D0%B5%D0%BB.png?raw=true) no-repeat right;
+}
+
+.head p {
+	margin-left: 20px;
+}
+
+.button_head_line {
+	padding: 5px 25px;
+	border: 1px solid white;
+	margin: 10px 20px;
+	background: black;
+	color: white;
+	font-size: 10px;
+}
+
+.button_head_line:hover {
+	background: rgba(255,255,255,.2);
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.logo_group {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	margin: 15px 0;
+}
+
+.logo_group p {
+	margin-top: -5px;
+}
+
+header {
+	min-height: 100vh;
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg?raw=true) no-repeat center;
+	background-size: cover;
+}
+	
+h1 {
+	font-size: 42px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+.title {
+	text-align: right;
+	margin: 80px 260px 120px 0;
+}
+
+.menu {
+	background: #66172a;
+}
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+.menu li {
+	display: inline-block;
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+.menu li:hover {
+	background: #962b45;
+}
+
+a {
+	text-decoration: none;
+	color: white;	
+}
+
+.arrow {
+	height: 65px;
+	width: 35px;
+	background: #66172a;
+	margin: 0 auto;
+	margin-top: 60px;
+	font-size: 52px;
+	text-align: center;
+	transform: rotate(90deg);
+	
+}
+
+.arrow:hover {
+	background: #962b45;
+}
+
+.button {
+	background: #66172a;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 40px;
+	font-size: 16px;
+	z-index:5;
+}
+
+.button:hover {
+	background: #962b45;
+}
+
+button {
+	background: #962b45;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 40px;
+	font-size: 16px;
+	color: white;
+	border: none;
+}
+
+button:hover {
+	background: #ba2b4c;
+	border: none;
+	cursor: pointer;
+	z-index: 2;
+}
+
+h3 {
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+h3:after {
+	position: absolute;
+  	content: "";
+  	border: 1px solid #ba2b4c; 
+  	width: 200px;
+  	top: 45px;
+  	left: 100px;
+ }
+
+.advantage h3 {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.wrap {
+	display: block
+}
+
+.advantage {
+	background: #66172a;
+}
+
+.advantage .wrapper {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: 80px 0px;
+}
+
+.adv {
+	display: inline-block;
+	text-align: center;
+	padding: 10px 40px;
+}
+
+.adv p {
+	font-size: 16px;
+}
+
+
+.rooms {
+	color: black;
+	width: 100%;
+}
+
+.rooms section {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+	width: 50%;
+    height: 50vw;
+  }
+
+ .rooms article {
+ 	display: flex;
+ 	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+  .rev {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+  .rooms p {
+  	width: 60%;
+  	text-align: center;
+  	font-size: 16px;
+  	padding: 45px 0;
+  }
+
+.one {
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.jpg?raw=true) no-repeat center;
+}
+.two {
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%81%D0%B2%D0%B5%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8.jpg?raw=true) no-repeat center;
+}
+.three {
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%81%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5.jpg?raw=true) no-repeat center;
+}
+.four {
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D1%8B%D0%B5.jpg?raw=true) no-repeat center;
+}
+
+.button_rooms {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #66172a;
+	border: 1px solid #66172a;
+	padding: 10px 40px;
+}
+
+.button_rooms:hover {
+	background: #66172a;
+	color: white;
+}
+
+.process {
+	z-index: 0;
+	position: relative;
+	height: 400px;
+	text-align: center;
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%812.jpg?raw=true) no-repeat center;
+}
+
+.process::before {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 400px;
+background: rgba(255, 255, 255, 0.5) center no-repeat;
+z-index: -1;
+}
+
+.process h2 {
+	color: black;
+	font-size: 32px;
+	padding: 160px 0 40px;
+	z-index: 5;
+}
+
+.form {
+	position: relative;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(102, 23, 42, 1);
+	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%84%D0%BE%D1%80%D0%BC%D0%B0_%D1%84%D0%BE%D0%BD.jpg?raw=true) no-repeat center;
+}
+
+.form::before {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 400px;
+background: rgba(102, 23, 42, 0.7)center no-repeat;
+z-index: 1;
+}
+
+.bord {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid white;
+	padding: 30px;
+	width: 70%;
+	justify-content: center;
+	z-index: 2;
+}
+
+.bord form, .bord button {
+	display: inline-block;
+}
+
+.bord form {
+	flex-grow: 2;
+	margin-right: 20px ;
+}
+
+.bord input {
+	height: 38px;
+	width: 100%;
+	padding-left: 5px;
+	font-size: 14px;
+	border: none;
+}
+
+footer {
+	min-height: 400px;
+	background-color: #66172a;
+	font-size: 16px;
+}
+
+.footer_wrap {
+	margin-left: 60px;
+}
+
+footer nav {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 40px;
+	width: 15%;
+}
+
+footer .contacts {
+	width: 36%
+}
+
+footer li {
+	text-align: left;
+	opacity:0.7;
+}
+
+footer li:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+footer h4 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+address {
+	font-style: inherit;
+	margin: 20px 0;
+}
+
+.socials {
+	margin-top: 20px;
+	margin-left: 25px;
+	display: inline-block;
+	background-image: url(https://github.com/natashta/test_from_fb/blob/master/img/socials.png?raw=true);
+}
+
+.socials:hover{
+	opacity:0.3;
+}
+
+.fb {
+	
+	background-position: 0px 0px;
+  width: 43px;
+  height: 43px;
+}
+
+.ig {
+	
+	background-position: 184px 0px;
+  width: 43px;
+  height: 43px;
+}
+
+.yt {
+	
+	background-position: 114px 0px;
+  width: 43px;
+  height: 43px;
+}
+.sq {
+
+	background-position: 43px 0px;
+  width: 43px;
+  height: 43px;
+}
+
+.sprite {
+	display: inline-block;
+	text-align: center;
+	background-image: url(https://github.com/natashta/test_from_fb/blob/master/img/sprite.png?raw=true);
+}
+
+.icon1 {
+  
+  background-position: 0px -55px;
+  width: 43px;
+  height: 50px;
+ }
+
+.icon2 {
+ 
+  background-position: -55px 0px;
+  width: 52px;
+  height: 53px;
+}
+.icon3 {
+  
+  background-position: 0px 0px;
+  width: 55px;
+  height: 55px;
+}
+.icon4 {
+  
+  background-position: -107px 0px;
+  width: 46px;
+  height: 54px;
+}
+
+
+@media (min-width: 780px) and (max-width: 1140px) {
+
+p {font-size: 22px;
+}
+
+.title {
+	margin-right: 80px;
+}
+
+.square {
+	width: 100%;
+}
+
+.rooms article {
+	height: 60vw;
+}
+.rooms .picture {
+	height: 100vw;
+	background-size: contain;
+}
+
+.contacts {
+width: 48%;
+}
+.footer_menu {display: inline-block;
+width: 50%;}
+
+.footer_menu nav {
+	display: block;
+	width: 100%;
+}
+
+}
