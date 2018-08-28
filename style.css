@@ -1,6 +1,6 @@
 @font-face {
     font-family: WeblySleekUILight;
-    src: url(fonts/WeblySleek_UI_Light/weblysleekuil.eot); /* Для IE5-8 */
+    src: url(fonts/weblysleekuil.eot); /* Для IE5-8 */
     src: local(weblysleekuil), url(fonts/WeblySleek_UI_Ru.ttf); /* Для остальных браузеров */
    }
 
