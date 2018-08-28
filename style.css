@@ -1,7 +1,7 @@
 @font-face {
     font-family: WeblySleekUILight;
-    src: url(https://github.com/natashta/test_from_fb/blob/master/fonts/weblysleekuil.eot); /* Для IE5-8 */
-    src: local(weblysleekuil), url(https://github.com/natashta/test_from_fb/blob/master/fonts/weblysleekuil.ttf); /* Для остальных браузеров */
+    src: url(fonts/WeblySleek_UI_Light/weblysleekuil.eot); /* Для IE5-8 */
+    src: local(weblysleekuil), url(fonts/WeblySleek_UI_Ru.ttf); /* Для остальных браузеров */
    }
 
 * {
@@ -135,19 +135,47 @@ a {
 }
 
 .arrow {
-	height: 65px;
-	width: 35px;
+	height: 40px;
+	width: 40px;
 	background: #66172a;
 	margin: 0 auto;
 	margin-top: 60px;
-	font-size: 52px;
+	font-size: 28px;
 	text-align: center;
 	transform: rotate(90deg);
-	
 }
 
 .arrow:hover {
 	background: #962b45;
+}
+
+.dots-wrapper {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.dot{
+	display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 0 8px;
+    background-color: #878b8c;
+    transition: .5s;
+}
+
+.active-dot {
+	background-color: white;
+}
+
+.dot.pr {
+	background-color: #962b45;
+	opacity: .5;
+}
+
+.active-dot.pr{
+	background-color: #962b45;
+	opacity: 1;
 }
 
 .button {
@@ -190,7 +218,7 @@ h3 {
 h3:after {
 	position: absolute;
   	content: "";
-  	border: 1px solid #ba2b4c; 
+  	border: 1px solid #962c43; 
   	width: 200px;
   	top: 45px;
   	left: 100px;
@@ -241,26 +269,43 @@ h3:after {
 .square {
 	width: 50%;
     height: 50vw;
+    position: relative;
   }
 
- .rooms article {
+.square.rev::after {
+    content: ''; 
+    position: absolute; 
+    right: -40px; top: 50%; 
+    border: 20px solid transparent; 
+    border-left: 20px solid white; 
+  }
+
+ .square.norm:before {
+ 	content: ''; 
+    position: absolute; 
+   	left: -40px; top: 50%; 
+    border: 20px solid transparent; 
+    border-right: 20px solid white; 
+ }
+
+.rooms article {
  	display: flex;
  	flex-direction: column;
   	justify-content: center;
   	align-items: center;
   }
 
-  .rev {
+.rev {
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-  .rooms p {
+.rooms p {
   	width: 60%;
   	text-align: center;
   	font-size: 16px;
   	padding: 45px 0;
-  }
+ }
 
 .one {
 	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.jpg?raw=true) no-repeat center;
@@ -295,6 +340,7 @@ h3:after {
 	text-align: center;
 	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%812.jpg?raw=true) no-repeat center;
 }
+
 
 .process::before {
 content: "";
@@ -372,23 +418,29 @@ footer {
 }
 
 .footer_wrap {
-	margin-left: 60px;
+	margin-left: 80px;
 }
 
 footer nav {
 	display: inline-block;
 	vertical-align: top;
-	padding: 20px 40px;
-	width: 15%;
+	margin: 40px;
+	margin-left: 0px;
+	width: 13%;
+	border-right: 1px solid #962c43;
+}
+
+footer nav:last-of-type {
+	border-right: none;
 }
 
 footer .contacts {
-	width: 36%
+	width: 23%
 }
 
 footer li {
 	text-align: left;
-	opacity:0.7;
+	opacity: 0.7;
 }
 
 footer li:hover {
@@ -397,18 +449,19 @@ footer li:hover {
 }
 
 footer h4 {
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 10px;
 }
 
 address {
 	font-style: inherit;
+	opacity: 0.7;
 	margin: 20px 0;
 }
 
 .socials {
 	margin-top: 20px;
-	margin-left: 25px;
+	margin-left: 20px;
 	display: inline-block;
 	background-image: url(https://github.com/natashta/test_from_fb/blob/master/img/socials.png?raw=true);
 }
