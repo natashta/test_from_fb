@@ -1,6 +1,6 @@
 @font-face {
     font-family: WeblySleekUILight;
-    src: url(fonts/weblysleekuil.eot); /* Для IE5-8 */
+    src: url(fonts/WeblySleek_UI_Light/weblysleekuil.eot); /* Для IE5-8 */
     src: local(weblysleekuil), url(fonts/WeblySleek_UI_Ru.ttf); /* Для остальных браузеров */
    }
 
@@ -94,10 +94,13 @@ body {
 
 header {
 	min-height: 100vh;
-	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg?raw=true) no-repeat center;
-	background-size: cover;
+	/*background-image: url('https://raw.githubusercontent.com/natashta/testfb/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg');
+	*/background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
 }
 	
+
 h1 {
 	font-size: 42px;
 	font-weight: normal;
@@ -338,7 +341,8 @@ h3:after {
 	position: relative;
 	height: 400px;
 	text-align: center;
-	background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%812.jpg?raw=true) no-repeat center;
+	/*background: url(https://github.com/natashta/test_from_fb/blob/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%812.jpg?raw=true) no-repeat center;
+*/
 }
 
 
@@ -424,8 +428,10 @@ footer {
 footer nav {
 	display: inline-block;
 	vertical-align: top;
-	padding: 40px;
+	padding-left: 40px;
+	margin-top: 40px;
 	width: 15%;
+	min-height: 330px;
 	border-right: 1px solid #962c43;
 }
 
@@ -449,7 +455,7 @@ footer li:hover {
 
 footer h4 {
 	padding-top: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 40px;
 }
 
 address {
@@ -531,7 +537,8 @@ address {
 
 @media (min-width: 780px) and (max-width: 1140px) {
 
-p {font-size: 22px;
+p {
+	font-size: 22px;
 }
 
 .title {
@@ -553,12 +560,13 @@ p {font-size: 22px;
 .contacts {
 width: 48%;
 }
-.footer_menu {display: inline-block;
-width: 50%;}
+.footer_menu {
+	display: inline-block;
+	width: 50%;
+}
 
 .footer_menu nav {
 	display: block;
 	width: 100%;
 }
-
 }
