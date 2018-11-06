@@ -1,11 +1,11 @@
 'use strict'
 
-var slides = ['https://raw.githubusercontent.com/natashta/testfb/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B0.jpg',
- 'https://raw.githubusercontent.com/natashta/testfb/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B02.jpg',
-  'https://raw.githubusercontent.com/natashta/testfb/master/img/%D1%88%D0%B0%D0%BF%D0%BA%D0%B03.jpg'];
-var slidesProcess = ['https://raw.githubusercontent.com/natashta/testfb/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81.jpg',
- 'https://raw.githubusercontent.com/natashta/testfb/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%812.jpg',
- 'https://raw.githubusercontent.com/natashta/testfb/master/img/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81.jpg'];
+var slides = ['img/шапка.jpg',
+ 'img/шапка2.jpg',
+  'img/шапка3.jpg'];
+var slidesProcess = ['img/процесс.jpg',
+ 'img/процесс1.jpg',
+ 'img/процесс.jpg'];
 //let slider = document.getElementsByTagName('header');
 let slider = document.getElementById('slider');
 let sliderProc = document.querySelector('.process');
