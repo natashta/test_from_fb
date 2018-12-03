@@ -11,6 +11,8 @@ let slider = document.getElementById('slider');
 let sliderProc = document.querySelector('.process');
 let dots = document.querySelectorAll('.dot');
 
+console.log(slider, sliderProc)
+
 let index = 0;
 
 function showImg() {
